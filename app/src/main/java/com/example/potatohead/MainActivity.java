@@ -19,6 +19,20 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        if(savedInstanceState != null) {
+            findViewById(R.id.arms).setVisibility(savedInstanceState.getInt("arms"));
+            findViewById(R.id.ears).setVisibility(savedInstanceState.getInt("ears"));
+            findViewById(R.id.eyes).setVisibility(savedInstanceState.getInt("eyes"));
+            findViewById(R.id.eyebrows).setVisibility(savedInstanceState.getInt("eyebrows"));
+            findViewById(R.id.mouth).setVisibility(savedInstanceState.getInt("mouth"));
+            findViewById(R.id.hat).setVisibility(savedInstanceState.getInt("hat"));
+            findViewById(R.id.shoes).setVisibility(savedInstanceState.getInt("shoes"));
+            findViewById(R.id.nose).setVisibility(savedInstanceState.getInt("nose"));
+            findViewById(R.id.mustache).setVisibility(savedInstanceState.getInt("mustache"));
+            findViewById(R.id.glasses).setVisibility(savedInstanceState.getInt("glasses"));
+
+
+        }
     }
 
     public void checkClicked(View v) {
@@ -47,6 +61,21 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         return row;
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("arms",findViewById(R.id.arms).getVisibility());
+        outState.putInt("eyes",findViewById(R.id.eyes).getVisibility());
+        outState.putInt("eyebrows",findViewById(R.id.eyebrows).getVisibility());
+        outState.putInt("nose",findViewById(R.id.nose).getVisibility());
+        outState.putInt("hat",findViewById(R.id.hat).getVisibility());
+        outState.putInt("mouth",findViewById(R.id.mouth).getVisibility());
+        outState.putInt("glasses",findViewById(R.id.glasses).getVisibility());
+        outState.putInt("ears",findViewById(R.id.ears).getVisibility());
+        outState.putInt("mustache",findViewById(R.id.mustache).getVisibility());
+        outState.putInt("shoes",findViewById(R.id.shoes).getVisibility());
     }
 
 }
