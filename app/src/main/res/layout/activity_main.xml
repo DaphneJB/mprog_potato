@@ -112,7 +112,7 @@
         app:layout_constraintTop_toBottomOf="@+id/frameLayout2">
 
         <CheckBox
-            android:id="@+id/mustache"
+            android:id="@+id/checkMustache"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="checkClicked"
@@ -121,7 +121,7 @@
             app:layout_row="0" />
 
         <CheckBox
-            android:id="@+id/glasses"
+            android:id="@+id/checkGlasses"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="checkClicked"
@@ -130,7 +130,7 @@
             app:layout_row="1" />
 
         <CheckBox
-            android:id="@+id/mouth"
+            android:id="@+id/checkMouth"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="checkClicked"
@@ -139,7 +139,7 @@
             app:layout_row="2" />
 
         <CheckBox
-            android:id="@+id/eyes"
+            android:id="@+id/checkEyes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="checkClicked"
@@ -148,7 +148,7 @@
             app:layout_row="3" />
 
         <CheckBox
-            android:id="@+id/shoes"
+            android:id="@+id/checkShoes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="checkClicked"
@@ -157,7 +157,7 @@
             app:layout_row="4" />
 
         <CheckBox
-            android:id="@+id/hat"
+            android:id="@+id/checkHat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="checkClicked"
@@ -166,7 +166,7 @@
             app:layout_row="0" />
 
         <CheckBox
-            android:id="@+id/nose"
+            android:id="@+id/checkNose"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="checkClicked"
@@ -175,7 +175,7 @@
             app:layout_row="4" />
 
         <CheckBox
-            android:id="@+id/ears"
+            android:id="@+id/checkEars"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="checkClicked"
@@ -184,7 +184,7 @@
             app:layout_row="3" />
 
         <CheckBox
-            android:id="@+id/arms"
+            android:id="@+id/checkArms"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="checkClicked"
@@ -193,7 +193,7 @@
             app:layout_row="2" />
 
         <CheckBox
-            android:id="@+id/eyebrows"
+            android:id="@+id/checkEyebrows"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="checkClicked"
