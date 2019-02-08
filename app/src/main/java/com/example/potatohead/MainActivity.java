@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //set visibility to the saved states
         if(savedInstanceState != null) {
             findViewById(R.id.arms).setVisibility(savedInstanceState.getInt("arms"));
             findViewById(R.id.ears).setVisibility(savedInstanceState.getInt("ears"));
@@ -30,8 +31,6 @@ public class MainActivity extends AppCompatActivity {
             findViewById(R.id.nose).setVisibility(savedInstanceState.getInt("nose"));
             findViewById(R.id.mustache).setVisibility(savedInstanceState.getInt("mustache"));
             findViewById(R.id.glasses).setVisibility(savedInstanceState.getInt("glasses"));
-
-
         }
     }
 
@@ -63,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
         return row;
     }
 
+    //save visibility states of images
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
