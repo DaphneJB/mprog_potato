@@ -9,7 +9,7 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final int KOLOM = 0;
+    private static final int COLUMN = 0;
     private int [][] arr = {{R.id.arms, R.id.checkArms}, {R.id.mustache, R.id.checkMustache}, {R.id.ears, R.id.checkEars},
             {R.id.mouth, R.id.checkMouth}, {R.id.eyebrows, R.id.checkEyebrows}, {R.id.shoes, R.id.checkShoes},
             {R.id.glasses, R.id.checkGlasses}, {R.id.nose, R.id.checkNose}, {R.id.hat, R.id.checkHat},
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         Log.d("potato", "checkClicked: ");
         CheckBox checkbox = (CheckBox) v;
         int check = checkbox.getId();
-        ImageView image = (ImageView) findViewById(arr[findID(check)][KOLOM]);
+        ImageView image = (ImageView) findViewById(arr[findID(check)][COLUMN]);
         if(image.getVisibility() == View.INVISIBLE){
             image.setVisibility(View.VISIBLE);
         }
